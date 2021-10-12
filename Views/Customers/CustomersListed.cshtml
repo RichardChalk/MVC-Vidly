@@ -1,0 +1,18 @@
+﻿@model Vidly.ViewModels.ListsViewModel
+
+
+@{
+    ViewBag.Title = "CustomersListed";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Customers</h1>
+
+<ul>
+    @foreach (var customer in Model.Customers)
+    {
+        <li>"Customer name: "@customer.Name</li>
+    }
+</ul>
+
+
